@@ -1,16 +1,16 @@
 import React from "react";
-import { GoogleLogin } from '@react-oauth/google';
+// import { GoogleLogin } from '@react-oauth/google';
 
 function Navbar() {
-  const responseMessage = (response) => {
-    console.log(response);
-};
-const errorMessage = (error) => {
-    console.log(error);
-};
+//   const responseMessage = (response) => {
+//     console.log(response);
+// };
+// const errorMessage = (error) => {
+//     console.log(error);
+// };
   return (
     <>
-      <div className={`fixed bg-[#141e30] top-0 left-0 w-full flex items-center justify-between`}>
+      <div className={`fixed bg-transparent top-0 left-0 w-full flex items-center justify-between`}>
         <div className="flex">
           <div className="flex items-center">
             <img src="camera.svg" className="w-20 pl-4" alt="" />
@@ -32,7 +32,8 @@ const errorMessage = (error) => {
           </ul>
         </div>
         <div className="flex items-center justify-end px-4 w-1/5">
-        <GoogleLogin useOneTap={true} type="standard" text="signin_with" onSuccess={responseMessage} onError={errorMessage} />
+        <button className="py-2 px-4 rounded-lg bg-emerald-500" >Sign In / Register</button>
+        {/* <GoogleLogin useOneTap={true} type="icon" text="signin_with" onSuccess={responseMessage} onError={errorMessage} /> */}
         </div>
       </div>
     </>

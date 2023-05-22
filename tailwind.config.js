@@ -9,7 +9,11 @@ module.exports = {
       font2: ['"Poppins"', 'sans-serif'],
       logo: ['"Pacifico"', 'cursive']
     },
-    extend: {},
+    extend: {
+      backgroundImage:{
+        hero:'url("photo-3.jpg")'
+      }
+    },
   },
   plugins: [],
 }
